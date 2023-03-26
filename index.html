@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Netflip</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 	<link rel="stylesheet" href="stil.css">
 </head>
 <body>
@@ -13,9 +14,9 @@
 	<h1>Netflip</h1>
 	<nav>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Movies</a></li>
-			<li><a href="#">TV Shows</a></li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#movies">Movies</a></li>
+			<li><a href="index.html#tvshows">TV Shows</a></li>
 			<li><a href="#">My List</a></li>
 		</ul>
 	</nav>
@@ -23,27 +24,73 @@
 
 <!-- Main Section -->
 <main>
-	<div class="container">
-		<h2>Popular Movies</h2>
-		<div class="focus">
-			<div class="card">
-				<img src="movie1.jpg" alt="Movie 1">
-				<h3>Movie 1 Title</h3>
-			</div>
-			<div class="movie">
-				<img src="movie2.jpg" alt="Movie 2">
-				<h3>Movie 2 Title</h3>
-			</div>
-			<div class="movie">
-				<img src="movie3.jpg" alt="Movie 3">
-				<h3>Movie 3 Title</h3>
-			</div>
-			<div class="movie">
-				<img src="movie4.jpg" alt="Movie 4">
-				<h3>Movie 4 Title</h3>
-			</div>
-		</div>
-	</div>
+	<section id="movies">
+		<h2>Movies</h2>
+		<ul>
+			<li>
+				<figure>
+					<img src="images/onceuponatime.jpg">
+					<figcaption>Once upon a time in Hollywood</figcaption>
+					<pre><small><i>alphacoders</i></small></pre>
+				</figure>
+			</li>
+
+			<li>
+				<figure>
+					<img src="images/fargo.jpg">
+					<figcaption>Fargo</figcaption>
+					<pre><small><i>alphacoders</i></small></pre>
+				</figure>
+			</li>
+
+			<li>
+				<figure>
+					<img src="images/elcamino.jpg">
+					<figcaption>El Camino: A Breaking Bad Movie</figcaption>
+					<pre><small><i>alphacoders</i></small></pre>
+				</figure>
+			</li>
+<!--wall.alphacoders.com-->
+		</ul>
+	</section>
+	<hr>
+	<section id="tvshows">
+		<h2>TV Shows</h2>
+		<ul>
+			<li>
+				<figure>
+					<img src="images/theoa.jpg">
+					<figcaption>The OA</figcaption>
+					<pre><small><i>wallpapercave</i></small></pre>
+				</figure>
+			</li>
+
+			<li>
+				<figure>
+					<img src="images/lincoln.jpg">
+					<figcaption>The Lincoln Lawyer</figcaption>
+					<pre><small><i>WallpaperAccess</i></small></pre>
+				</figure>
+			</li>
+
+			<li>
+				<figure>
+					<img src="images/mindhunter.jpeg">
+					<figcaption>Mindhunter</figcaption>
+					<pre><small><i>GeekTyrant</i></small></pre>
+				</figure>
+			</li>
+
+			<li>
+				<figure>
+					<img src="images/ozark.jpg">
+					<figcaption>Ozark</figcaption>
+					<pre><small><i>IMDb</i></small></pre>
+				</figure>
+			</li>
+
+		</ul>
+	</section>
 </main>
 
 <!-- Footer Section -->

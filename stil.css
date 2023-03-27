@@ -22,13 +22,117 @@ body {
     padding: 0;
 }
 
-body #onceupon {
-    background-image: url('images/onceuponatime.jpg');
+.transpbkg1 {
+    color: white;
+    opacity: .75;
+    border-radius: .3vw;
+}
+
+#once1 {
+    background-color: #431706;
+    overflow: auto;
+}
+
+#once2 {
+    background-color: #9F4B2A;
+    overflow: auto;
+}
+
+main div {
+    height: 90vh;
+}
+
+.movielayout {
+    display: grid;
+    position: fixed;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "a b c c d";
+    bottom: 6vh;
+    top: 70vh;
+    left: 0;
+    right: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.b {
+    grid-area: a;
+}
+
+.d {
+    grid-area: d;
+}
+
+article p {
+    padding: .3vw .3vw .3vw .3vw;
+    margin: 0;
+}
+
+article h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: .4vw;
+}
+
+.bkground {
     background-position: center center;
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+body#onceupon {
+    background-image: url('images/onceuponatime.jpg');
+}
+
+body#theoa {
+    background-image: url('images/theoa.jpg')
+}
+
+body#lincoln {
+    background-image: url('images/lincoln.jpg');
+}
+body#mindhunter {
+    background-image: url('images/mindhunter.jpeg');
+}
+
+#mind1 {
+    background-color: #171B1A;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#mind2 {
+    background-color: #171B1A;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#lincoln1 {
+    background-color: #26373E;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#lincoln2 {
+    background-color: #4E4945;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#theoa2 {
+    background-color: #14100D;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#theoa1 {
+    background-color: #171310;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -77,7 +181,7 @@ figure figcaption {
 
     img {
         width: 100% !important;
-        max-width: 40vw !important;
+        max-width: 100vh !important;
         height: auto;
     }
 
@@ -93,6 +197,10 @@ figure figcaption {
         border-radius: 0.2vw;
         object-fit: cover;
     }
+
+    header a#meniu {
+        font-size: 10vh;
+    }
 }
 
 header {
@@ -103,27 +211,20 @@ header {
     margin: 0;
     width: 100%;
     padding: 0.1vw 0 0.2vw 0;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: .85;
     color: #fff;
     height: 2.5vw;
+}
+
+.mainpage {
+    background-color: rgb(0, 0, 0);
 }
 
 header h1 {
     display: inline;
     padding: 0 0.8vw 0 1vw;
     font-size: 2vw;
-}
-
-button {
-    all: unset;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
-
-button:focus h3 {
-    color: orange;
-    cursor: pointer;
 }
 
 a {
@@ -173,7 +274,8 @@ footer {
     bottom: 0;
     width: 100%;
     height: 4vh;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: .85;
     color: #fff;
 }
 
@@ -196,7 +298,6 @@ main {
     /*grid-template-columns: 1fr;*/
     /*overflow-x: scroll;*/
     margin: 1vw;
-    background-color: #FFFDFA;
 }
 
 main ul {

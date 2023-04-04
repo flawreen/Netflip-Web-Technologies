@@ -267,6 +267,10 @@ figure figcaption {
     main.movielayout article h3 {
         font-size: 2vh;
     }
+
+    main.movielayout article small {
+        font-size: 1.1vh;
+    }
 }
 
 header {

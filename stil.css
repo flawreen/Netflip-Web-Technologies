@@ -9,13 +9,13 @@
     font-family: "Roboto Medium", serif;
 }
 
-.card {
-    box-shadow: 0.1vw 0.2vh 0.1vw rgba(211, 211, 211, 0.1);
-    background-color: rgba(211, 211, 211, 0.1);
-    max-width: 20vw;
-    justify-content: center;
-    align-content: center;
-}
+/*.card {*/
+/*    box-shadow: 0.1vw 0.2vh 0.1vw rgba(211, 211, 211, 0.1);*/
+/*    background-color: rgba(211, 211, 211, 0.1);*/
+/*    max-width: 20vw;*/
+/*    justify-content: center;*/
+/*    align-content: center;*/
+/*}*/
 
 ul li figure img {
     transition: scale 1s ease-in-out,
@@ -32,7 +32,9 @@ ul li figure img:hover {
 }
 
 .animatie {
-    margin: auto;
+    /*margin: auto;*/
+    margin-right: 2vw;
+    margin-left: 1vw;
     height: .8rem;
     width: .8rem;
     background-color: orange;
@@ -204,6 +206,11 @@ figure figcaption {
         background-image: url('images/onceuponatimemobile.jpg')
     }
 
+    .animatie {
+        height: .4rem;
+        width: .4rem;
+    }
+
     header nav li {
         font-size: 2.7vw;
     }
@@ -213,7 +220,11 @@ figure figcaption {
     }
 
     header h1 {
-        font-size: 3.5vw !important;
+        font-size: 3vw !important;
+    }
+
+    header a {
+        font-size: 2.5vw !important;
     }
 
     footer p {
@@ -228,17 +239,21 @@ figure figcaption {
         height: 4vh !important;
     }
 
-    img {
-        width: 100% !important;
-        max-width: 100vh !important;
-        height: auto;
-        border-radius: 0.2vw;
-        object-fit: cover;
+    figure a img {
+        /*width: 100% !important;*/
+        height: 50% !important;
     }
 
     main ul {
         grid-template-columns: 1fr;
         overflow-y: scroll;
+    }
+
+    main section figure figcaption {
+        font-size: 2vh ;
+    }
+    main section figure pre {
+        font-size: 1.5vh;
     }
 
     header a#meniu {
@@ -297,7 +312,8 @@ header > *:last-child {
 
 header nav {
     opacity: 0;
-    position: relative;
+    display: inline;
+    /*position: relative;*/
     margin-left: auto;
     padding: 0 2vw 0 2vw;
 }
@@ -313,12 +329,14 @@ header h3 {
 header li {
     display: inline-block;
     padding: 0 0.25vw 0 0.25vw;
-    font-size: 1.1vw;
     text-decoration: none;
+}
+header a {
+    font-size: 1.4vw;
 }
 
 header nav ul {
-    margin: 0;
+    margin: 0 0 0 .5vw;
     padding: 0;
 }
 
@@ -379,7 +397,7 @@ li pre {
     font-size: 0.8vw;
 }
 
-figure img {
+figure a img {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35);
     padding: 0;
     margin: 0.2vw;

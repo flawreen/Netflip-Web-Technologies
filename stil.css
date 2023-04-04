@@ -259,6 +259,14 @@ figure figcaption {
     header a#meniu {
         font-size: 10vh;
     }
+
+    main.movielayout article p {
+        font-size: 1.5vh;
+    }
+
+    main.movielayout article h3 {
+        font-size: 2vh;
+    }
 }
 
 header {

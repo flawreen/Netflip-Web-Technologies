@@ -110,6 +110,7 @@ main div {
 
 .b {
     grid-area: a;
+
 }
 
 .d {
@@ -265,11 +266,23 @@ figure figcaption {
     }
 
     main.movielayout article h3 {
-        font-size: 2vh;
+        font-size: 1.7vh;
     }
 
     main.movielayout article small {
         font-size: 1.1vh;
+    }
+
+    .movielayout {
+        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "a b c d" !important;
+    }
+
+    main.movielayout article h3::before {
+        margin-left: .3rem;
+        margin-right: .3rem;
     }
 }
 
@@ -343,6 +356,7 @@ header li {
     padding: 0 0.25vw 0 0.25vw;
     text-decoration: none;
 }
+
 header a {
     font-size: 1.4vw;
 }
